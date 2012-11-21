@@ -1,0 +1,22 @@
+#
+# LaTeX tmp
+#
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+#
+# Binary files
+#
+*.pdf
+#
+# Archives
+#
+*.zip
+*.lzma
+#
+# Tmp files
+#
+*~
