@@ -1,0 +1,147 @@
+\documentclass[xetex]{beamer}
+
+
+\mode<presentation> {
+%  \usetheme{Singapore}
+  \usetheme{Frankfurt}
+  \setbeamercovered{transparent}
+}
+
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[czech]{babel}
+\usepackage{palatino}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgflibraryarrows}
+\usepackage{pgflibrarysnakes}
+
+\title{CryptoParty\\OTR}
+
+\author{Ondřej Profant}
+\institute[Piráti]{Česká pirátská strana}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Osnova}
+  \tableofcontents
+\end{frame}	
+
+\section{Definice}
+
+\subsection{Instant messaging}
+\begin{frame}
+ \frametitle{Co je IM?}
+ \begin{itemize} 
+   \item instant messaging
+   \item okamžitá komunikace
+   \item např. ICQ, Facebook chat, Google talk 
+	 \item svobodný prokol jabber
+ \end{itemize}
+\end{frame}
+
+\subsection{OTR}
+\begin{frame}
+ \frametitle{Co je OTR?}
+ \begin{itemize} 
+   \item Off-the-Record Messaging
+   \item šifrovací protokol
+   \item šifrování probíhá na klientech (koncových uzlech komunikace)
+ \end{itemize} 
+\end{frame}
+
+\section{Co potřebujeme?}
+
+\begin{frame}
+	\frametitle{Co potřebujeme} 
+
+ IM klienta podporujícího OTR.
+
+V našem případě:
+	\begin{itemize}
+		\item Pidgin - \url{www.pidgin.im}
+		\item OTR plugin
+		\item Ubuntu 12.10
+	\end{itemize}
+
+	Instalace v Ubuntu:\\
+	\texttt{sudo apt-get install pidgin pidgin-otr}
+\end{frame}
+
+\section{Šifrovaní a autentizace}
+\begin{frame}
+	\frametitle{Šifrování a autentizace}
+	\begin{block}{Šifrování:} zpráva je šifrovaná. To znamená, že si jí lze přečíst pouze se správným klíčem.
+	\end{block}
+
+	\begin{block}{Autentizace:} ověření identity. Pokud jen šifrujeme, tak víme pouze to, že na druhé straně je někdo, kdo umí naše zprávy dešifrovat.
+	\end{block}
+
+	Více: \url{http://www.cypherpunks.ca/otr/help/3.2.1/levels.php}
+\end{frame}
+
+\subsection{Autentizace}
+\begin{frame}
+	\frametitle{Autentizace}
+	3 možnosti ověření identity:
+	\begin{itemize}
+		\item<1-> Question and answer (otázka a odpověď)
+		\item<2-> Shared secret (sdílené heslo)
+		\item<3-> Manual fingerprint verification (ověření otisku)
+	\end{itemize}
+\end{frame}
+
+\section{Praktická ukázka}
+
+\subsection{Ukázka 1}
+\begin{frame}
+	\frametitle{Ukázka 1 - Pidgin}
+
+	Screencast na youtube:\\ \url{http://youtu.be/4d3pqkelsrU}
+\end{frame}
+
+\subsection{Ukázka 2}
+\begin{frame}
+	\frametitle{Ukázka 2 - Xabber}
+	Potřebujeme: Android, Xabber\\
+	\url{http://www.xabber.com}\\
+	\includegraphics{pic/xabber-android.png}
+
+	Užití velmi podobné jako v Pidginu. 
+\end{frame}
+
+
+\section{Závěr}
+
+\begin{frame}
+  \frametitle{Závěr}
+	Děkuji za pozornost.
+
+	\bigskip
+	
+	Doplňující otázky?
+
+	\bigskip
+
+	\bigskip
+
+	\scriptsize
+	Copyleft Ondřej Profant, 2012. Všechna práva vyhlazena. Sdílejte, upravujte a~nechte sdílet za stejných podmínek. 
+
+	\bigskip
+
+	Prezentace v~úplné formě\footnote{i se zdrojovými kódy} na:\\ 
+	\url{https://www.github.com/kedrigern/prezentace-cs}
+
+	\bigskip
+
+	Mail: ondrej.profant -at- pirati.cz 
+\end{frame}
+
+\end{document}
