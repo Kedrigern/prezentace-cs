@@ -1,0 +1,109 @@
+\documentclass[xetex]{beamer}
+
+
+\mode<presentation> {
+%  \usetheme{Singapore}
+  \usetheme{Frankfurt}
+  \setbeamercovered{transparent}
+}
+
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[czech]{babel}
+\usepackage{palatino}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgflibraryarrows}
+\usepackage{pgflibrarysnakes}
+
+\title{CryptoParty\\Steganografie}
+
+\author{Ondřej Profant}
+\institute[Piráti]{Česká pirátská strana}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Osnova}
+  \tableofcontents
+\end{frame}	
+
+\section{Definice}
+
+\subsection{Steganografie}
+\begin{frame}
+ \frametitle{Co je Steganografie?}
+ \begin{itemize} 
+		\item metoda skrytí zprávy
+		\item metoda skrytí toho, že zpráva existuje
+		\item zašifrování zprávy
+ \end{itemize}
+\end{frame}
+
+\section{Instalace}
+\begin{frame}
+ \frametitle{Instalace (vybrané OS)}
+	Stránka projektu: \url{http://steghide.sourceforge.net}
+ \begin{itemize} 
+   \item Ubuntu:
+			\begin{enumerate}
+				\item \scriptsize{\texttt{wget https://launchpad.net/ubuntu/+archive/primary/+files/steghide\_0.5.1-9build2\_amd64.deb}}
+				\item \texttt{sudo dpkg -i steghide\_0.5.1-9build2\_amd64.deb}
+			\end{enumerate}
+   \item Fedora:\\
+			Předpřipravený balík na of. stránkách
+   \item Windows:\\
+			Předpřipravený balík na of. stránkách
+ \end{itemize} 
+\end{frame}
+
+\section{Použití}
+\begin{frame}
+	\frametitle{Použití}
+	Připravíme si:
+	\begin{itemize}
+		\item běžný obrázek: \texttt{obrazek.jpg}
+		\item tajnou zprávu (prostý text): \texttt{tajna.zprava.txt}
+		\item aplikace: \texttt{steghide}
+	\end{itemize}	
+
+Pro zašifrování použijeme příkaz:\\
+\texttt{steghide embed\textbackslash{} \\ --embedfile tajna.zprava.txt\textbackslash{} \\ --coverfile obrazek.jpg\textbackslash{} \\ --stegofile obrazek.plus.jpg}
+
+Pro dešifrování použijeme:\\
+\texttt{steghide extract\textbackslash{} \\ --stegofile obrazek.plus.jpg\textbackslash{}\\ --extractfile tajna.zprava.txt}
+\end{frame}
+
+\section{Závěr}
+
+\begin{frame}
+  \frametitle{Závěr}
+	Děkuji za pozornost.
+
+	\bigskip
+	
+	Doplňující otázky?
+
+	\bigskip
+
+	\bigskip
+
+	\scriptsize
+	Copyleft Ondřej Profant, 2012. Všechna práva vyhlazena. Sdílejte, upravujte a~nechte sdílet za stejných podmínek. 
+
+	\bigskip
+
+	Prezentace v~úplné formě\footnote{i se zdrojovými kódy} na:\\ 
+	\url{https://www.github.com/kedrigern/prezentace-cs}, screencast tvořen v programu Kazam.
+
+	\bigskip
+
+	Mail: ondrej.profant -at- pirati.cz 
+\end{frame}
+
+\end{document}
