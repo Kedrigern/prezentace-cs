@@ -1,6 +1,5 @@
 \documentclass[xetex]{beamer}
 
-
 \mode<presentation> {
 %  \usetheme{Singapore}
   \usetheme{Frankfurt}
@@ -12,9 +11,17 @@
 \usepackage[czech]{babel}
 \usepackage{palatino}
 \usepackage{graphicx}
-\usepackage{tikz}
-\usepackage{pgflibraryarrows}
-\usepackage{pgflibrarysnakes}
+%\usepackage{tikz}
+%\usepackage{pgflibraryarrows}
+%\usepackage{pgflibrarysnakes}
+\usepackage{listings}
+\lstset{language=bash,
+        numbers=left,
+        numberstyle=\tiny,
+        showstringspaces=false,
+        aboveskip=-40pt,
+        frame=leftline
+        }
 
 \title{CryptoParty\\Steganografie}
 
@@ -33,19 +40,40 @@
   \tableofcontents
 \end{frame}	
 
+\section{Motivace}
+\begin{frame}
+ \frametitle{Motivace}
+
+	\begin{block}{Problém}
+	V~mnoha státech je šifrování postaveno mimo zákon (resp. je nám k~ničemu).
+	\end{block}
+
+Např.:
+ \begin{itemize}
+    \item<2-6> USA, povinnost osoby dešifrovat, uvažovalo se i~o~povinnosti výrobce šifry dešifrovat *facepalm*
+    \item<3-6> Velká Britanie, zákon RIPA
+		\item<4-6> Francie, donedávna bylo povoleno šifrovat jen za účelem autentifikace (ověření) etc. V~roce 2004 zrušeno.
+		\item<5-6> Pakistán, zákaz VPN
+		\item<6> Jistě mnoho dalších autoritářských režimů
+ \end{itemize}
+\end{frame}
+
+
 \section{Definice}
 
 \subsection{Steganografie}
 \begin{frame}
  \frametitle{Co je Steganografie?}
  \begin{itemize} 
-		\item metoda skrytí zprávy
-		\item metoda skrytí toho, že zpráva existuje
-		\item zašifrování zprávy
+		\item<2-4> metoda skrytí zprávy
+		\item<3-4> metoda skrytí toho, že zpráva existuje
+		\item<4-4> zašifrování zprávy
  \end{itemize}
 \end{frame}
 
-\section{Instalace}
+\section{Steghide}
+
+\subsection{Instalace}
 \begin{frame}
  \frametitle{Instalace (vybrané OS)}
 	Stránka projektu: \url{http://steghide.sourceforge.net}
@@ -53,7 +81,7 @@
    \item Ubuntu:
 			\begin{enumerate}
 				\item \scriptsize{\texttt{wget https://launchpad.net/ubuntu/+archive/primary/+files/steghide\_0.5.1-9build2\_amd64.deb}}
-				\item \texttt{sudo dpkg -i steghide\_0.5.1-9build2\_amd64.deb}
+				\item \scriptsize{sudo dpkg -i steghide\_0.5.1-9build2\_amd64.deb}
 			\end{enumerate}
    \item Fedora:\\
 			Předpřipravený balík na of. stránkách
@@ -62,7 +90,7 @@
  \end{itemize} 
 \end{frame}
 
-\section{Použití}
+\subsection{Použití}
 \begin{frame}
 	\frametitle{Použití}
 	Připravíme si:
@@ -73,13 +101,73 @@
 	\end{itemize}	
 
 Pro zašifrování použijeme příkaz:\\
-\texttt{steghide embed\textbackslash{} \\ --embedfile tajna.zprava.txt\textbackslash{} \\ --coverfile obrazek.jpg\textbackslash{} \\ --stegofile obrazek.plus.jpg}
+\scriptsize{steghide embed\textbackslash{} \\ --embedfile tajna.zprava.txt\textbackslash{} \\ --coverfile obrazek.jpg\textbackslash{} \\ --stegofile obrazek.plus.jpg}
 
 Pro dešifrování použijeme:\\
-\texttt{steghide extract\textbackslash{} \\ --stegofile obrazek.plus.jpg\textbackslash{}\\ --extractfile tajna.zprava.txt}
+\scriptsize{steghide extract\textbackslash{} \\ --stegofile obrazek.plus.jpg\textbackslash{}\\ --extractfile tajna.zprava.txt}
 \end{frame}
 
+\section{Stegotools}
+\begin{frame}
+	\frametitle{Stegotools}
+	Homepage: \url{http://sourceforge.net/projects/stegotools}
+	
+	Bohužel podporuje pouze bitmapy (*.bmp), což dnes není příliš běžný formát.
+\end{frame}
+
+\section{OutGuess}
+\begin{frame}
+	\frametitle{OutGuess}
+	Homepage: \url{http://www.outguess.org}
+	
+	Obsažen v~linuxových distribucích. 
+	
+	Šifrování:\\
+	\tt{outguess -k heslo -d tajna.zprava.txt obrazek.jpg obrazek.outguess.jpg}
+	
+	Dešifrování:\\
+	\tt{outguess -k heslo -r obrazek.plus2.jpg out.txt}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Poznámka}
+	Programy jsou vzájemně nekompatibilní!
+	
+	Což je dobře. Jednotný protokol není z~důvodů zachování utajení zprávy.
+\end{frame}
+
+\section{Stegdetect}
+\begin{frame}
+	\frametitle{Stegdetect}
+	Program pro zjišťování steganogradie.
+	
+	Od autora OutGuess.	Mé pokusy nedopadly příliš dobře - určoval velmi nepřesně.
+\end{frame}
+
+\section{StegFS}
+\begin{frame}
+	\frametitle{StegFS}
+	Steganografický souborový systém!
+
+	Bohužel, to již někdy příště.
+
+	Homepage: \url{https://albinoloverats.net/projects/stegfs}
+\end{frame}
+
+
 \section{Závěr}
+
+\begin{frame}
+	\frametitle{Zdroje}
+	
+	\begin{enumerate}
+	\item homepages jednotlivých projektů
+	\item \url{http://cs.wikipedia.org/wiki/Steganografie}
+	\item \scriptsize{\url{http://www.root.cz/clanky/jak-ukryt-tajna-data-do-obrazku-aneb-steganografie-v-praxi}}
+	\item \scriptsize{\url{http://www.zive.cz/clanky/nejlepsi-program-pro-steganografii/sc-3-a-163982/default.aspx}}
+	\item \url{http://en.wikipedia.org/wiki/Cryptography\_law}
+	\end{enumerate}
+\end{frame}
 
 \begin{frame}
   \frametitle{Závěr}
