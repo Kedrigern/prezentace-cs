@@ -4,6 +4,7 @@ all:
 	make -C cryptoparty-otr
 	make -C cryptoparty-steganografie
 	make -C cryptoparty-predstaveni
+	make -C cybersikana
 	make -C operacni_system
 	make -C oss_sprava
 	make -C piratske_umeni
