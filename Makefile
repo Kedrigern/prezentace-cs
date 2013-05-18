@@ -1,6 +1,7 @@
 all:
 	make -C alternativni_obchodni_modely_v_kulture
 	make -C cryptoparty-uvod
+	make -C cryptoparty-bitcoin
 	make -C cryptoparty-otr
 	make -C cryptoparty-steganografie
 	make -C cryptoparty-predstaveni
