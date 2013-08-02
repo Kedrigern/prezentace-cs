@@ -58,6 +58,19 @@
 	Pokud máte konstruktivní připomínky či dokonce konkrétní nápady, jak prezentaci vylepšit, tak kontaktujte autory, či rovnou pošlete pull request na Githubu.
 \end{frame}
 
+\section{Měna}
+
+\begin{frame}
+	\frametitle{Měna}
+	Je prostředkem směny.
+
+	\bigskip
+
+	Zlatý standart postupně opuštěn v průběhu 20. stol.
+
+	Dnešní měny nejsou příliš kryty - jedná se spíše o důvěru, než o trvalou hodnotu.
+\end{frame}
+
 \section{Základní charakteristika}
 
 \begin{frame}
@@ -75,14 +88,71 @@
 \begin{frame}
  	\frametitle{Základní charakteristika}
 	\begin{itemize}
-		\item bezpečná: podložena výpočetním výkonem (šiframa)
-		\item globální: velmi nízké poplatky za libovolnou transakci
+		\item bezpečná: podložena výpočetním výkonem (šifry)
+		\item globální: velmi nízké poplatky za libovolnou transakci 
 		\item volnost: každý může mít zdarma neomezený počet peněženek
 		\item anonymita: resp. pseudoanonymita
 		\item transparentí: všechny transakce jsou veřejné
 		\item předem dané množství Bitcoinů $\Rightarrow$ deflační měna (?)
 	\end{itemize}
 \end{frame}
+
+\section{Využití}
+
+\begin{frame}
+        \frametitle{Co lze za Bitcoin koupit}
+        \begin{itemize}
+                \item VPS (virtual private network)
+                \item připojení k internetu
+                \item HardWare (např. i na těžení Bitocinu)
+		\item jidlo (např. pražský hackerspace Brmlab)
+                \item sázet v kasinu (známé je Satoshi Dice)
+                \item drogy etc. (např. Silk Road)
+		\item \ldots{}
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Hedvábná stezka}
+	\includegraphics[scale=0.4]{images/silkroad.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Armory}
+	\includegraphics[scale=0.4]{images/armory.png}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Legalita BTC}
+	Červenec 2013 zákaz v Thajsku
+	%TODO
+\end{frame}
+
+\section{Historie}
+
+\begin{frame}
+  \frametitle{Historie}
+        \begin{itemize}
+                \item srpen 2008: registrována doména bitcoin.org
+                \item říjen 2008: Bitcoin design paper published
+                \item listopad 2008: Bitcoin project registered at SourceForge.net
+                \item leden 2009: First Bitcoin transaction, in block 170 - from Satoshi to Hal Finney
+                \item květen 2010: laszlo first to buy pizza with Bitcoins agreeing upon paying 10,000 BTC for ~\$25 worth of pizza courtesy of jercos
+		\item únor 2011 parita s dolarem dle Mt.Gox
+		\item květen 2013 BTC v kurzu (dle Mt.Gox) až \$220/BTC
+		\item červenec 2013 prodej Satoshi Dice (Bitcoin kasino) prodáno za 126,315 BTC (cca \$11.47 million)
+	\end{itemize}
+
+        Více na: \url{https://en.bitcoin.it/wiki/History}
+\end{frame}
+
+\begin{frame}
+        \frametitle{Kurz}
+        Vývoj kurzu červen 2011 až květen 2014:
+
+        \includegraphics[scale=0.35]{images/bitcoin-exchange-rate.png}
+\end{frame}
+
 
 \section{Praktické použití}
 
@@ -92,15 +162,49 @@
 
 	\bigskip
 
-	Před provedením transakce určíme poplatek (fee). Lze i 0. Výše poplatku ovlivní rychlost potvrzení transakce.
+	Před provedením transakce určíme poplatek (fee). Lze i 0. Výše poplatku ovlivní rychlost potvrzení transakce (čili rychlost směny). 
+\end{frame}
+
+\begin{frame}
+ \frametitle{Praktické použití - klient / peněženka}
+	\includegraphics[scale=0.3]{images/klient.png}
+
+	\smallskip
+
+	Klient uchovává vaše bitcoiny, komunikuje se sítí, zobrazí vám historii plateb a umožňuje vám provádět platby nové.
 \end{frame}
 
 \begin{frame}
  \frametitle{Praktické použití}
-	klienti
+	
+	První spuštění klienta
+
+	\includegraphics[scale=0.4]{images/first-time-run.png}
+\end{frame}
+
+\begin{frame}
+\frametitle{Praktické použití - transakce}
+	\includegraphics[scale=0.6]{images/btc-recv.png}
+
+	\medskip        
+
+	\includegraphics[scale=0.6]{images/btc-recv-confirm.png}
 \end{frame}
 
 \section{Čím je měna podložena}
+
+\begin{frame}
+        \frametitle{Způsob emitování pěnez}
+        Bitcoinů je předem daný přesný počet.
+        Uvolňovány jsou postupně.
+
+        Emitování nových peněz probíhá formou odměny minerům. Tato odměna se snižuje.
+
+        \smallskip
+
+        \includegraphics[scale=0.20]{images/emitation.png}
+\end{frame}
+
 
 \begin{frame}
 	\frametitle{Čím je měna podložena}
@@ -143,29 +247,17 @@
 
 	\bigskip
 
-	Pokud by někdo vlastnit nadpolovičný výkon, tak by se mu mohlo podařit potvrzovat neoprávněné transakce (avšak nikoliv zrušit staré).
+	Pokud by někdo vlastnit nadpolovičný výkon, tak by se mu mohlo podařit potvrzovat neoprávněné transakce (avšak nikoliv zrušit staré - na to by byl potřeba ještě větší výkon).
 
 	\bigskip
 
 	Za svou snahu dostávají mineři dvě odměny (vždy za vypočítaný blok):
 	\begin{itemize}
-		\item fee (poplatek) z transakcí
+		\item fee (poplatek) z~transakcí
 		\item nově uvolněné peníze (odměnu)
 	\end{itemize}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Odbočka: způsob emitování pěnez}
-	Bitcoinů je předem daný přesný počet.
-
-	\bigskip
-	
-	Uvolňovány jsou postupně.
-
-	\bigskip
-
-	Tato odměna je uměle snižována. Postupem času bude miniaturní a~síť bude konvergovat k~max. počtu uvolněných bitcoinů.
-\end{frame}
 
 \begin{frame}
 	\frametitle{Čím je měna podložena}
@@ -173,11 +265,11 @@
 
 	\bigskip
 
-	Rozhodně se nevyplatí na procesoru. Je potřeba výkoná grafická karta (navíc AMD).
+	Rozhodně se nevyplatí na procesoru. Je potřeba výkoná grafická karta (navíc AMD). Rozšiřují se specializované stroje.
 
 	\bigskip 
 
-	I přesto se mineři raději spojují do poolů.
+	I proto se mineři raději spojují do poolů (guild, skupin, spolků).
 \end{frame}
 
 \begin{frame}
@@ -190,43 +282,11 @@
 	Zdroj: \url{http://blockchain.info/pools}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Co lze za Bitcoin koupit}
-	\begin{itemize}
-		\item VPS
-		\item připojení k internetu
-		\item HW
-		\item sázet v kasinu
-		\item drogy
-	\end{itemize}
-\end{frame}
 
 \begin{frame}
 	\includegraphics[scale=0.37]{images/how-a-bitcoin-transaction-works.jpg}
 \end{frame}
 
-\section{Historie}
-
-\begin{frame}
-  \frametitle{Historie}
-	\begin{itemize}
-		\item srpen 2008: registrována doména bitcoin.org 
-		\item říjen 2008: Bitcoin design paper published 
-		\item listopad 2008: Bitcoin project registered at SourceForge.net 
-		\item leden 2009: First Bitcoin transaction, in block 170 - from Satoshi to Hal Finney
-		\item květen 2010: laszlo first to buy pizza with Bitcoins agreeing upon paying 10,000 BTC for ~\$25 worth of pizza courtesy of jercos
-	\end{itemize}
-
-	Více na: \url{https://en.bitcoin.it/wiki/History}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Kurz}
-	Vývoj kurzu červen 2011 až květen 2014:
-	
-	\includegraphics[scale=0.35]{images/bitcoin-exchange-rate.png}
-	
-\end{frame}
 
 \begin{frame}
 
