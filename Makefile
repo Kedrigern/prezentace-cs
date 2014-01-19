@@ -10,6 +10,7 @@ all:
 	make -C oss_sprava
 	make -C piratske_umeni
 	make -C unix
+	make -C aaron-swartz
 	mv */*.pdf .
 
 clean:
