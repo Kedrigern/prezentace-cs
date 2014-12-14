@@ -33,8 +33,24 @@
   \tableofcontents
 \end{frame}	
 
-\section{Hesla}
+\section{Počítač}
+\begin{frame}
+ \frametitle{Přístup}
+ \begin{itemize}
+  \item Počítač není nepřítel.
+  \item Počítač je stroj.
+  \item Software je to s čím pracujete.
+  \item Software již může být váš nepřítel - naštěstí ho lze vyměnit.
+  \item Pokud vám něco nejde:
+   \begin{enumerate}
+    \item Zkuste se naučit pracovat s danou aplikací.
+    \item Zkuste alternativní aplikace.
+   \end{enumerate}
+ \end{itemize}
+\end{frame}
+%TODO
 
+\section{Hesla}
 
 \begin{frame}
  \frametitle{Hesla}
@@ -47,6 +63,11 @@
  \end{itemize}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Hesla}
+	\includegraphics[scale=0.5]{pic/heslo.jpg}
+\end{frame}
+
 
 \begin{frame}
  \frametitle{Hesla}
@@ -55,7 +76,10 @@
    \item kombinovat, modifikovat
    \item prokládat
    \item vyhodnocovat riziko
+   \item správci hesel
  \end{itemize} 
+
+Silné heslo nemusí být složité.
 \end{frame}
 
 \section{Operační systém}
@@ -65,7 +89,7 @@
 \begin{frame}
 	\frametitle{Pravidelné aktualizace} 
 	\begin{itemize}
-		\item Snad každý systém poskytuje bezpečnostní aktualizace.
+		\item Každý systém poskytuje bezpečnostní aktualizace.
 		\item Tyto aktualizace se opravdu vyplatí nainstalovat.
 		\item Tyto aktualizace jsou zpravidla zdarma.
 	\end{itemize}
@@ -105,6 +129,14 @@
    		\item Existuje více druhů operačních systémů
    		\item S různým zaměřením a různým stylem používání
  	\end{itemize} 
+
+	\bigskip
+
+	Příklady pro desktop: Windows 7, Windows 8, Mac OS X, Ubuntu, Fedora, FreeBSD, Chrome OS
+
+	\bigskip
+
+	Příklady pro mobily: Windows Phone, iOS, Android, Sailfish OS 
 \end{frame}
 
 \section{Internetové prohlížeče}
@@ -116,6 +148,10 @@
 		\item Liší se kvalitou, rychlostí
    		\item a mnohdy bezpečností a přístupem k ni
 	\end{itemize} 
+
+	\bigskip
+
+	Příklady: Internet Explorel, Mozila Firefox, Google Chrome
 \end{frame}
 
 \subsection{Anonymní mód}
@@ -206,6 +242,19 @@
 \includegraphics[scale=0.6]{pic/zip-pass.png}
 \end{frame}
 
+\begin{frame}
+ \frametitle{Šifra}
+ Opravdová šifra:
+
+ \bigskip
+
+ openssl aes-256-cbc -in <input> -out <output>.aes
+
+ \bigskip
+
+ openssl aes-256-cbc -d -in <input>.aes -out <output>
+\end{frame}
+
 \section{Cloudy}
 
 \begin{frame}
@@ -214,8 +263,21 @@
    \item Uložiště dat mimo váš počítač
    \item Obvykle mimo konkrétní počítač
    \item Již z principu založeno na důvěře poskytovateli
-   \item Samozřejmě jsou lepší a horší řešení
+   \item Samozřejmě jsou lepší a horší řešení (např. Mega šifruje na straně klienta)
  \end{itemize} 
+\end{frame}
+
+\section{Další témata}
+\begin{frame}
+ \frametitle{Další témata}
+ \begin{itemize}
+  \item Steganografie: metoda ukytí správy v obrázku
+  \item OTR: šifrování IM komunikace
+  \item Bitcoin: virtuální decentralizovaná kryptoměna
+  \item VPN: soukromá síť skrz internet
+  \item TOR: anonymizační síť
+  \item dalšín témata: DPI, Cryptohandbook, Truecrypt
+ \end{itemize}
 \end{frame}
 
 \section{Závěr}
@@ -234,12 +296,14 @@
 
 	\bigskip
 
+	\url{http://www.cryptoparty.cz}
+
 	\bigskip
 
 	\scriptsize
 Copyleft Ondřej Profant, 2012. Všechna práva vyhlazena. Sdílejte, upravujte a~nechte sdílet za stejných podmínek. 
 
-Prezentace v~úplné formě\footnote{i se zdrojovými kódy} na vyžádání emailem: ondrej.profant -at- pirati.cz 
+Prezentace v~úplné formě\footnote{i se zdrojovými kódy} na \url{http://github.com/kedrigern/prezentace-cs}
 \end{frame}
 
 \end{document}
