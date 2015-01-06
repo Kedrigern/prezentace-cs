@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Opensource ve veřejné správě</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Ondřej Koch">
+		<meta name="author" content="Ondřej Profant">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/customizations/opensans.css" id="theme">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+		if( window.location.search.match( /print-pdf/gi ) ) {
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = 'css/print/pdf.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		}
+		</script>
+	</head>
+
+	<body>
+
+		<div class="reveal reveal-viewport theme-font-opensans theme-color-grey-blue linear center">
+
+            <div class="slides">
+								<!--
+									Začátek prezentace Ondřej Profant
+								-->
+
+								<section>
+									<h2>Svobodný software<br /> ve veřejné správě</h2>
+
+									<br />
+
+									<h3>Ondřej Profant</h3>
+
+									<br />
+
+									<p>zastupitel hl. m. Prahy</p>
+									<p>Pirátská strana</p>
+								</section>
+
+								<section>
+									<section>
+										<h2>Cena</h2>
+
+										<h4>Marbes</h4>
+										<p>agendový systém Proxio</p>
+										<p>20 mil / rok</p>
+
+										<h4>Gordic</h4>
+										<p>účetní software Ginis</p>
+										<p>68 mil / rok</p>
+									</section>
+									<section>
+										<h2>Cena</h2>
+										IDM (10 mil), Service Desk (2 mil), MS Office (16 mil), MS servery (20 mil)
+									</section>
+									<section>
+										<h2>Cena</h2>
+										<ul>
+											<li>
+												Cena bu vždy problém
+												<ul>
+													<li>
+														Komerční subjekty nám vždy budou nabízet nová skvělá řešení, která vůbec nepotřebujeme
+													</li>
+												</ul>
+											</li>
+											<li>Nechceme soutěž, chceme spolupracovat</li>
+											<li>Chceme funkční a kompatibilní systémy</li>
+											<li>Uvědomte si, že program je stále jen jeden<br />
+												&rArr;
+												cenu je třeba brát jako sumu</li>
+										</ul>
+									</section>
+								</section>
+
+								<section>
+									<section data-background="./img/source-code.png">
+										<h2>Zdrojový kód</h2>
+
+										<br />
+
+										<table class="myTable">
+											<tbody>
+												<tr>
+													<th>Zdrojový kód</th>
+													<td>čitelný</td>
+													<td>editovatelný, přizpůsobitelný</td>
+												</tr>
+												<tr>
+													<td>&nbsp;</td>
+												</tr>
+												<tr>
+													<th>Binární soubor / aplikace</th>
+													<td>nečitelný</td>
+													<td>nemodifikovatelný, fixovaný na danou architekturu</td>
+												</tr>
+											</tbody>
+										</table>
+									</section>
+									<section>
+										<h2>Vendor lock-in</h2>
+										<ul>
+											<li>Vazba na autora</li>
+											<li>Nikdo jiný nám s problémem nepomůže</li>
+											<li>Občas máme sice subdodavatele / poskytovatele podpory, ale ty dělají pouze to, co jim autor dovolí</li>
+										</ul>
+									</section>
+								</section>
+
+								<section>
+									<section data-background="./img/munchen.jpg">
+										<h2>Příklady</h2>
+
+										<table>
+											<thead>
+												<tr>
+													<th>
+														Instituce
+													</th>
+													<th>
+														Co?
+													</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Mnichov</td>
+													<td>LiMux - kompletní linuxová distribuce, 14800 stanic</td>
+												</tr>
+												<tr>
+													<td>Berlín</td>
+													<td>OpenOffice, neaktuální verze (kritika)</td>
+												</tr>
+												<tr>
+													<td>Trento</td>
+													<td>Virtualizace KVM, 1200 stanic</td>
+												</tr>
+												<tr>
+													<td>Francouzské četnictvo</td>
+													<td>GendBuntu, 72000 stanic, snížení nákladů o 40%</td>
+												</tr>
+												<tr>
+													<td>Grygov</td>
+													<td>Kompletní infrastruktura, 1479 obyvatel</td>
+												</tr>
+											</tbody>
+										</table>
+
+										<br />
+
+										<p>Další: Jena, Freiburg, Udine, Zaragoza, Andalusie ...</p>
+									</section>
+
+									<section>
+										<h2>Jak na to?</h2>
+										<br />
+
+										<h4>Komerční partneři</h4>
+										<p>Komerční podpora pro OSS.</p>
+										<p>Kdykoliv však můžete správu převzít.</p>
+										<p>Např. EasyRedmine, RedHat, Suse, EDB</p>
+
+										<br />
+
+										<h4>Schopný interní tým</h4>
+										<p>Složité, avšak možné.</p>
+										<p>Pokud postavíte, tak už vydrží.</p>
+									</section>
+								</section>
+
+								<!--
+									Konec prezentace Ondřej Profant
+									Začátek prezentace Ondřej Koch
+								-->
+
+                <section data-background="./img/public-sector.jpg">
+                    <h2>Opensource ve veřejné správě...</h2>
+
+                    <h3>...s obrázky a příklady.<br>
+                    </h3>
+                </section>
+                <section>
+                  <section data-background="./img/ntk.jpg">
+
+                    <h2>Kdo jsem?</h2>
+                    <h3>Ondřej Koch</h3>
+                    <ul>
+                      <li>Systémový administrátor, architekt, vývojář.</li>
+                      <li>Náměstek pro ICT Národní technické knihovny</li>
+                    </ul>
+                    <p>
+                    <h2>Co tu dělám?</h2>
+                    <p>Budu se snažit vám ukázat, co děláme pomocí open source technologií.</p>
+
+                  </section>
+
+                    <section data-background="./img/what-is.jpg">
+
+                        <h1>Co je open source?</h1>
+                        <p>Implementace svobodné kultury do světa software.</p>
+
+                    </section>
+
+                    <section data-background="./img/what-is.jpg">
+
+                        <h3>Otevřený zdrojový kód.</h3>
+                        <p>Kdokoliv může cokoliv změnit.</p>
+                        <p>Za předpokladu, že to dělá slušně a v koncensuálně, využijí toho i ostatní.</p>
+
+                    </section>
+
+                    <section data-background="./img/fence2.jpg">
+
+                        <h3>Co to znamená?</h3>
+                        <p>Možnost volby, verzatilitu, více spolupráce, méně soupeření.</p>
+
+                    </section>
+
+                    <section data-background="./img/freedom-in-bottle.jpg">
+
+                        <h3>Proč něco takového chtít?</h3>
+                        <p>Protože můžete vcelku levně dělat věci, které byste jinak dělat nemohli.</p>
+                        <p>Protože vaše investice mohou využít i ostatní.</p>
+
+                    </section>
+
+                    <section data-background="./img/jonnobleuk-wiring.jpeg">
+                        <h3>Kde lze opensource užít?</h3>
+
+                        <div style="text-align: center;">
+                            <div style="display: inline-block; text-align: left;">
+                                <ul>
+                                    <li>Virtualizace</li>
+                                    <li>Databáze</li>
+                                    <li>Centrální správa nastavení</li>
+                                    <li>Dohledový systém</li>
+                                    <li>Identity management (včetně např. SSO)</li>
+                                    <li>Jednotné kontaktní místo (servicedesk)</li>
+                                    <li>Dokumentační platforma</li>
+                                    <li>Infrastrukturní služby (DNS, DHCP, RADIUS, služby typu NAS, ...)</li>
+                                    <li>Business orieted služby (ERP, DMS, ..., i oborově specifické jako ERM)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </section>
+                </section>
+                <section>
+                    <section data-background="./img/torkildr-cern.jpeg">
+                        <h1>Příklady z praxe</h1>
+                    </section>
+                    <section data-background="./img/kvm.png">
+                        <h3>Virtualizace: KVM</h3>
+                          <h4>Cena za podporu produkce: cca. 400 000 Kč/rok (před akademickou slevou)</h4>
+                          <h4>Cena za testovací prostředí: 0 Kč</h4>
+                          <ul>
+                            <li>Snadná implementace virtualizačního clusteru.</li>
+                            <li>Dostupná dokumentace, postupy, školení (použitelná nejen pro virtualizaci).</li>
+                            <li>Produkce: Red Hat Enterprise Linux (celkově 9 fyzických serverů a 100+ virtuálních)</li>
+                            <li>Testovací prostředí: CentOS (2 fyzické servery)</li>
+                        </ul>
+                        <br><br>
+                        <ul>
+                            <li>Totéž na VMware: cca. 1 500 000 Kč (4xVMware vServer / socket a VMware vCenter licence &amp; support) Kč</li>
+                        </ul>
+                    </section>
+
+                    <section data-background="./img/zabbix.png">
+                        <h3>Dohledový systém: Zabbix</h3>
+                        <h4>Cena za licence: 0 Kč</h4>
+                        <h4>Cena za implementaci: mzdové náklady <br>(náročnost: 1-2 člověkoměsíce).</h4>
+
+                        <div data-fragment-index="0" class="ace-line" id="magicdomid665">
+                          <ul>
+                            <li>610 monitorovaných entit</li>
+                            <li>cca. 19 000 monitorovaných hodnot</li>
+                            <li>110 nových hodnot za vteřinu</li>
+                            <li>Trendy, grafy, hlášení o incidentech, autodiscovery, API, integrace s ticketovacím systémem, ...</li>
+                          </ul>
+                        </div>
+                    </section>
+
+                    <section data-background="./img/tickets.jpg">
+                        <h3>Dokumentace, ticketovací systém: Redmine</h3>
+                        <h4>Cena za licence: 0 Kč</h4>
+
+                        <div data-fragment-index="0" class="ace-line" id="magicdomid665">
+                          <ul>
+                            <li>Řízení projektů (úkoly, milníky, Gantt chart)</li>
+                            <li>Interní dokumentační wiki</li>
+                            <li>Ticketovací systém (fronty, eskalace, sledování, notifikace)</li>
+                            <li>Správa a prohlížení repozitářů zdrojových kódů (SVN, GIT)</li>
+                            <li>API, integrovatelné s LDAPem, dohledovým systémem, ...</li>
+                          </ul>
+                        </div>
+                    </section>
+
+
+                    <section data-background="./img/database.jpg">
+                        <h3>Databáze: PostgreSQL</h3>
+                        <h4>Cena: 0 Kč (EDB max. cca. 100 000 Kč/socket/rok)</h4>
+
+                        <div data-fragment-index="0" class="ace-line" id="magicdomid669">
+                            <p>Skype (Microsoft), Sony, Apple, Red Hat, Fujitsu, Cisco, Juniper, IMDB, ...</p>
+                        </div>
+                        <div data-fragment-index="1" class="ace-line" id="magicdomid671">
+                            <p>Existuje komerční support a to i v ČR: EnterpriseDB.</p>
+                        </div>
+                        <div data-fragment-index="2" class="ace-line" id="magicdomid673">
+                            <p>Postkytuje vrstvu, která se umí tvářit jako Oracle.</p>
+                        </div>
+
+
+                    </section>
+                    <section data-background="./img/samba.jpg">
+                        <h2>Centrální správa nastavení</h2>
+                        <h4>Cena: 0 Kč</h4>
+                        <h3>Servery: Puppet</h3>
+                        <p>Bezpečnostní hrozby typu shellshock či poodle mitigovány plošně během několika minut od vydání opravy.</p>
+
+                        <h3>Stanice: Samba</h3>
+                        <p>Integrace, která by bez open source byla nemožná (cca. 17 000 uživatelských účtů, cca. 200 koncových zařízení).</li>
+
+                    </section>
+
+                    <section data-background="./img/twicepix--hp-blade-closeup.jpeg">
+                        <h2>Infrastrukturní služby</h2>
+                        <h4>Cena: 0 Kč (součástí licence za Red Hat Enterprise Linux)</h4>
+                        <ul>
+                          <li>DNS: BIND</li>
+                          <li>DHCP: dhcpd</li>
+                          <li>RADIUS: FreeRADIUS</li>
+                          <li>VPN: OpenVPN</li>
+                          <li>LDAP: OpenLDAP</li>
+                        </ul>
+                    </section>
+
+
+                    <section data-background="./img/people.jpg">
+                        <h2>Personální náročnost</h2>
+                        <ul>
+                          <li>Projektové vedení: 1 úvazek</li>
+                          <li>L1 support: 6 úvazků</li>
+                          <li>L2 support + interní vývoj: 5,5 úvazku (4 Red Hat Certified Engineer)</li>
+                        </ul>
+                        <br><br>
+                        <p><h4>Klíčový je silný interní tým, který je ochoten přebírat odpovědnost.</h4></p>
+                    </section>
+                </section>
+								<section>
+									<section data-background-color="rgba( 0, 0, 0, 0.6 )" data-background="./img/questions.jpg">
+										<h3>Prostor pro dotazy</h3>
+										<p style="position: relative; top: 300px; left: 20px;">
+											Ilustrace:
+											<a href="http://www.flickr.com/photos/agnihot/">agnihot</a>,
+											<a href="http://www.flickr.com/photos/mosmancouncil/">jonnobleuk</a>,
+											<a href="http://www.flickr.com/photos/mosmancouncil/">mosmancouncil</a>,
+											<a href="http://www.flickr.com/photos/torkildr/">torkildr</a>,
+											<a href="http://www.flickr.com/photos/twicepix/">twicepix</a>.
+										</p>
+									</section>
+								</section>
+            </div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
