@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+			<title>Informatika MHMP</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="assets/intro.jpg">
+					<h1>Informatika v Praze</h1>
+
+					<p>Ondřej Profant</p>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+## Kdo jsem?
+
+* místopředseda komise ICT MHMP
+* předseda komise ICT a otevřené radnice P7
+* člen komise ICT a otevřené radnice P1
+
+Eh... bohužel s byrokraty to jinak nejde.
+					</script>
+				</section>
+				<section>
+					<section data-markdown data-background="assets/marianske.namesti.jpg">
+						<span style="color: black;">
+						<script type="text/template">
+# hl. m. Prahy
+
+- Magistrát hl. m. Prahy - úřad
+- 22 statutárních MČ
+- 34 nestatutárních MČ
+- desítky městkých firem
+
+						</script>
+					</span>
+					</section>
+					<section data-markdown data-background="assets/mapa.jpg">
+						<script type="text/template">
+Statutární MČ:
+
+- Praha 4: 126 944
+- Praha 10: 108 477
+
+Srovnání:
+
+- Plzeň: 168 034
+- Olomouc: 99 489
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+## Městské firmy
+
+- PRE
+- Plynárny
+- Teplárny
+- Pražské služby
+- TSK
+- DPP
+- ...
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background="assets/IT.jpg">
+						<script type="text/template">
+# Informatika MHMP
+
+- 2 odbory:
+    - Informatika (INF MHMP)
+        - 11 oddělení
+		- cca 40 lidí
+    - Ochrany informačních systémů a infrastruktury
+		- 3 oddělení
+					</script>
+				</section>
+				<section data-markdown>
+						<script type="text/template">
+Převážná většina agendy je outsourcovaná. Včetně:
+
+- správy koncových zařízení
+- správy sítí
+- architektury (vize)
+
+Dokonce mnohdy chybí SLA!
+					</script>
+				</section>
+				<section data-markdown>
+						<script type="text/template">
+Chybí:
+
+- vize
+- koncepce
+- vedení
+- zodpovědnost
+- komunikace s dalšími subjekty
+					</script>
+				</section>
+								<section data-markdown>
+						<script type="text/template">
+Problém jsou:
+
+- vendor lock-in
+- licence
+- personální složení
+- zbytečně cenově nadhodnocené projekty
+
+					</script>
+				</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
