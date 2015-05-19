@@ -31,10 +31,14 @@
 		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="assets/intro.jpg">
-					<h1>Informatika v Praze</h1>
+				<section data-markdown data-background="assets/intro.jpg">
+					<script type="text/template">
+# Informatika v Praze
 
-					<p>Ondřej Profant</p>
+### Ondřej Profant
+					
+19\. květen
+					</script>
 				</section>
 				<section data-markdown>
 					<script type="text/template">
@@ -56,17 +60,17 @@
 - desítky městkých firem
 					</script>
 				</section>
-				<section data-markdown data-background="assets/mapa.jpg">
+				<section data-markdown>
+					 <!-- .slide: data-background="#ff0000" -->
 					<script type="text/template">
-Statutární MČ:
+## Srovnání						
 
-- Praha 4: 126 944
-- Praha 10: 108 477
-
-Srovnání:
-
-- Plzeň: 168 034
-- Olomouc: 99 489
+| Obec     | Počet obyvatel |
+|----------|---------------:|
+| Praha 4  | 126 944        |
+| Praha 10 | 108 477        |
+| Plzeň    | 168 034        |
+| Olomouc  |  99 489        |
 					</script>
 				</section>
 				<section data-markdown>
@@ -82,9 +86,12 @@ Srovnání:
 - ...
 					</script>
 				</section>
+				<section>
+					<img src="assets/graf.jpg" />
+				</section>
 			</section>
 			<section>
-				<section data-markdown data-background="assets/IT-INF.png">
+				<section data-markdown>
 					<script type="text/template">
 # Informatika MHMP
 
@@ -112,7 +119,7 @@ Dokonce mnohdy chybí SLA!
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-Chybí:
+## Chybí
 
 - vize
 - koncepce
@@ -123,15 +130,178 @@ Chybí:
 				</section>
 				<section data-markdown>
 					<script type="text/template">
-Problém jsou:
+## Problém jsou
 
 - vendor lock-in
 - licence
 - personální složení
 - zbytečně cenově nadhodnocené projekty
-
-					</script>
+- dodavatelé se nespecializují
+ - naopak se snaží tvořit molochy
+ - nedodoržují obvyklé standardy
+						</script>
+					</section>
 				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+# IT z pohledu MČ
+
+* nedůvěrují magistrátu
+* nerozumí IT 
+* absence tržního prostředí
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+## Celoměstské systémy
+
+| Systém  | Dodavatel | Účel            | 
+|---------|-----------|-----------------|
+| Ginis   | Gordic    | účetnictví      |
+| e-Spis  | ICZ a.s.  | spisová služba  |
+| Agendio | Marbes    | agendový systém |
+| ISKŘ    | Aseco     | krizové řízení  |
+| GIS     |           | mapy            |
+						</script>
+					</section>	
+					<section data-markdown>
+						<script type="text/template">
+## Plánované celomětské systémy
+
+* Identity managment (IdM)
+* OpenData
+* Emailový server
+* Elektronické uložiště (archív)
+* Parkování	(?)
+						</script>
+					</section>	
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+# Konkrétní městské části
+
+* Praha 6
+* Praha 7
+* Praha 10
+* Praha 11
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+## Praha 7
+
+| Zaměstnanců |        |
+|-------------|-------:|
+| obyvatel    | 41 699 |
+| úřadu       |    200 |
+| oddělení IT |      4 |
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							
+| Položka                             | KČ        |
+|-------------------------------------|----------:|
+| Inovace výpočetní techniky          |	  255 000 |
+| Aplikační software                  | 2 026 000 |
+| Licence - software                  |   483 000 |
+| Inovace a rozšíření počítačové sítě |	  345 000 |
+| Servery a zálohování                |   430 000 |
+| Řešení bezpečnosti sítě             |	  730 000 |
+| **Celkem**                          | 4 269 000 |
+| *Platy*                             |         ? |
+
+Praha 7: [Zdroj](http://www.praha7.cz/path/rozpocet)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+## Praha 7
+
+#### Realizované projekty
+
+* rozvázání vztahů s Grape services
+ * mnoho nevýhodných smluv
+* nasazení systému HESK
+  
+<br />  
+  
+#### Připravované projekty
+
+* web
+* DMS
+* Otevřená města	
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+## Praha 6
+
+| Zaměstnanců |        |
+|-------------|-------:|
+| obyvatel    | 98 261 |
+| úřadu       |    314 |
+| externistů  |     43 |
+| oddělení IT |      7 |
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+## Praha 10
+
+| Zaměstnanců |         |
+|-------------|--------:|
+| obyvatel    | 108 477 |
+| úřadu       |       ? |
+| externistů  |       ? |
+| oddělení IT |       1 |
+
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+## Praha 10
+
+* velká zakázka na outsourcing
+ * 150 000 000 Kč
+ * není v ní vše!
+ * provádí O2
+* cca 40 000 000 Kč / rok
+						</script>
+					</section>	
+					<section data-markdown>
+						<script type="text/template">
+# Srovnání
+
+| Městská část     | Obyvatel | Úředníků | IT  | Náklady (mil) |
+|------------------|---------:|---------:|----:|--------------:|
+| Praha 6          |  98 261  |    314   |   7 |  ?            |
+| Praha 7          |  41 699  |    200   |   3 |  6            |
+| Praha 10         | 108 477  |    400   |   2 | 40            |
+| Praha 11         |  76 792  |      ?   |   ? | 13            |
+| Brno (mag.)      | 377 508  |   1166   |   6 |  ?            |
+
+						</script>
+					</section>
+				</section>
+				<section data-markdown data-background="../general-assets/questions.jpg">
+					<script type="text/template">
+## Otázky?
+
+Prostor pro vaše dotazy.
+
+## Zdroje
+
+* [srovnání MČ](https://docs.google.com/spreadsheets/d/1LY7Z99kUp-e5pw-FNsiyQI-qtJlMTGp1p8p3_UUflBg/edit?usp=sharing)
+* Rozpočty
+ * [rozpočet P7](http://www.praha7.cz/Urad-mestske-casti/Usneseni-rady-a-zastupitelstva-/Usneseni-rady-a-zastupitelstva)
+ * [rozpočet MHMP](http://rozpocet.praha.eu/Navrh2015)
+* P10
+ * [Slibný vývoj v řešení ICT na Praze 10](http://vlasta10.cz/index.php/aktualne/70-slibny-vyvoj-v-reseni-ict-na-praze-10)
+ * [Outsourcing IT za 150 mil/6 let](http://vlasta10.cz/index.php/aktualne/66-radni-prahy-10-a-zelena-senatorka-ivana-cabrnochova-navrhuje-outsourcing-it-sluzeb-za-150-milionu-na-6-let-koalice-vlasta-varuje-pred-skodami)
+					</script>
 				</section>
 			</div>
 		</div>
