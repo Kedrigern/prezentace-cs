@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Prague Hacks</title>
+		
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Ondřej Profant">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="../reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/css/theme/black.css" id="theme">
+		<style>
+			html.img-right div.slide-background.present {
+   				 background-position: right;
+			}
+		</style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+# Prague Hacks
+
+### Ondřej Profant
+
+member of Prague City Council
+
+8<sup>th</sup> June 2015
+					</script>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+## Prague's OpenData project
+
+- goals: 
+  - citywide OpenData
+  - target at transparency (at least now) 
+- involved:
+  - Prague city hall (Magistrát)
+  - Prague's districts (Prague has 56 city districts)
+  - Prague's city companies (transpport, ZOO, library, road administrator, ...)
+
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+## Prague's OpenData project
+
+- already done:
+  - Institute of Planning & Development: [geodata](http://www.geoportalpraha.cz/en/opendata)
+- technology: [ckan](http://ckan.org)
+- formats: ckan api, `csv`, `xlsx`, [`gtfs`](http://en.wikipedia.org/wiki/General_Transit_Feed_Specification), `docx`, `pdf` (readable), `png`
+
+Following datasets are first fragment of Prague's citywide OpenData.
+
+All data will be available via a server at Node5.
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background="assets/p7-background.png">
+						<script type="text/template">
+## Prague 7
+
+- Prague district
+- 42 381 citizens
+- standard for city district OpenData
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+### Education
+
+format: `xlsx`
+
+- list of schools
+  - capacity
+  - equipment
+  - after school activity
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+### Housing
+
+format: `xlsx`
+
+- city district apartments
+  - list
+ 
+<br />
+  
+### Transparency
+
+format: `xlsx`
+
+- self-government organization
+  - city council
+  - committee
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+### Enviroment
+
+format: `xlsx`
+
+- dumpsters (containters for oversize waste)
+  - calendar
+  - locations
+- recycling bins
+  - locations
+- urban greenery
+  - logging data
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-background="assets/prague2.png">
+						<script type="text/template">
+## Prague
+
+- capital city of the Czech Republic
+- one of 13 regions of the Czech Republic
+- Prague has 57 city districts
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+### Sport
+
+format: `xlsx`
+
+- list of sports ground
+
+<br />
+
+### Housing
+
+format: `xlsx`
+
+- city aparments
+  - list
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+### Transparency
+
+format: `xlsx`
+
+- self-government organization
+  - city council
+  - committee
+						</script>
+					</section>
+				</section>
+				<section data-markdown data-background="assets/zoo-background.png">
+					<script type="text/template">
+## ZOO
+
+format: `xlsx`
+
+- daily visitors
+- animal's lexicon
+  - taxonomy
+  - biotops
+- event calendar 
+					</script>
+				</section>
+				<section data-markdown data-background="assets/mhd.png">
+					<script type="text/template">
+## Public transport 
+
+- schedule (format: `gtfs`)
+- statistics data (format: `csv`)
+- annual reports (format: readable `pdf` / `docx`)
+					</script>
+				</section>
+				<section data-markdown data-background="assets/mk-background.png">
+					<script type="text/template">
+## City library
+
+- daily visitors by branch office (format: `csv`)
+					</script>
+				</section>
+				<section data-markdown data-background="../general-assets/questions.jpg">
+					<script type="text/template">
+## Questions?
+
+## Sources
+
+Prague's OpenData project:
+
+[Github](https://github.com/Kedrigern/opendata-praha)
+
+Presentation:
+
+[Slideshare](http://www.slideshare.net/ondrejprofant/praguehack) | [Github](https://github.com/Kedrigern/prezentace-cs)
+					</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="../reveal.js/lib/js/head.min.js"></script>
+		<script src="../reveal.js/js/reveal.js"></script>
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal.js/plugin/zoom-js/zoom.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
