@@ -1,9 +1,9 @@
 Sbírka prezentací k různým přednáškám.
 
-#Binární podoba (PDF)
+# Binární podoba (PDF)
 Exportovaná PDF jsou k dispozici na adrese: [http://www.slideshare.net/ondrejprofant](http://www.slideshare.net/ondrejprofant).
 
-#Zdrojové kódy
+# Zdrojové kódy
 
 Zdrojové kódy jsou různého druhu. Starší v XeLaTeXu, novější v `html`, resp. `markdown`.
 
@@ -14,6 +14,20 @@ Reveal.js je vložen jako submodul. Pro správnou funknčnost je potřeba použ�
 git clone --recursive git@github.com:Kedrigern/prezentace-cs.git
 ```
 Následně vše bude správně slinkováno.
+
+## reveal-md
+
+Je zjednodušením předchozí možnosti. Prezentace je jen jeden markdown soubor. Prezentace se spustí pomocí:
+
+```
+reveal-md <prezentace>.md
+```
+
+Pokud `reveal-md` nemáte, tak ho nainstalujete pomocí:
+
+```
+npm -g install reveal-md
+```
 
 ## XeLaTeX
 
