@@ -23,11 +23,9 @@ Je zjednodušením předchozí možnosti. Prezentace je jen jeden markdown soubo
 reveal-md <prezentace>.md
 ```
 
-Pokud `reveal-md` nemáte, tak ho nainstalujete pomocí:
+Pokud `reveal-md` nemáte, tak ho nainstalujete pomocí: `npm -g install reveal-md`
 
-```
-npm -g install reveal-md
-```
+Trochu více triky je export. Teoreticky: `reveal-md <prezentace>.md --print <prezentace>.pdf`, ale to mi nefunguje dobře. Nejlépe funguje prezentaci otevřít v Chrome a dodat do adresy `print-pdf`: `http://localhost:1948/opendata.md?print-pdf#/`
 
 ## XeLaTeX
 

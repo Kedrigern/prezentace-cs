@@ -3,10 +3,11 @@
 #### Ondřej Profant
 
 - člen komise ICT hl. m. Prahy
-- zastupitel hl. m. Prahy
+- opoziční zastupitel hl. m. Prahy
 - Pirátská strana
 
-7\. listopad 2015
+7\. listopad 2015  
+Openalt
 
 ---
 
