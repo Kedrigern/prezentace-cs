@@ -1,4 +1,4 @@
-<!--Meta author:'Ondřej Profant' theme:'night' title:'OSS'-->
+<!--Meta author:'Ondřej Profant' theme:'night' title:'Celopražská otevřená data'-->
 
 <!-- Čas: 23. 3. 2016 11:00-17:30 Zadání:
 
