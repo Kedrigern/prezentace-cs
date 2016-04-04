@@ -83,7 +83,7 @@
 - V čem je problém?
   - 273 600 Kč / 4 roky pronájmu   <!-- .element class="fragment" -->
   - 248 500 Kč koupě (+instalace, zaruka jen 2 roky)  <!-- .element class="fragment" -->
-  - [zdroj]()  <!-- .element class="fragment" -->
+  - [zdroj](https://github.com/pirati-cz/KlubPraha/blob/master/spisy/2016/036-inteligentni-kose-na-praze-1/005-materialy/prehled.md)  <!-- .element class="fragment" -->
 
 ----
 
