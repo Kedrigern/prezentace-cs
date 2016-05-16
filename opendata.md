@@ -1,8 +1,8 @@
 <!--Meta author:'Ondřej Profant' theme:'night' title:'Celopražská otevřená data'-->
 
-<!-- Čas: 23. 3. 2016 11:00-17:30 Zadání:
-
-- 1 IT pracovník <!-- .element class="fragment" -->
+<!-- 
+- 1 IT pracovník <!-- .element class="fragment" 
+-->
 
 
 # Celopražská opendata
@@ -13,7 +13,7 @@
 - opoziční zastupitel hl. m. Prahy
 - Pirátská strana
 
-21\. březen 2016
+16\. květen 2016
 
 
 ---
@@ -74,20 +74,43 @@
 | #       |                           |
 |--------:|---------------------------|
 |      13 | organizací                |
-|     129 | datových sad              |
+|      19 | datových formát           |
+|     156 | datových sad              |
 |   1 000 | zvířat z pražské ZOO      |
 |   7 110 | evidovaného majetku       |
 |   8 463 | faktur z městkých části   |
 | 497 609 | výpujček z MK (1998-2015) |
 
+Čísla jsou stav k 16. 5.
+
 ----
 
 ### Organizace
 
-- dobrovolné zapojení
 - pilotní provoz
-- nejkativnějším partnerem Institut plánování a rozvoje (IPR)
-- zapojeno 5 městských části (P5, P6, P7, P8, P21)
+- dobrovolné zapojení
+- zapojeno:
+	- 5 městských části (P5, P6, P7, P8, P21)
+	- nejaktivnějším partnerem Institut plánování a rozvoje (IPR)
+	- dalšími: DPP, TSK, ZOO, Městská knihovna, Operátor ICT
+- odpovědnost:
+	- provoz: magistrát (technické řešení)
+	- koordinace: magistrát
+	- správa: decentralizovaná (MČ mají vlastní směrnice dle opendata.gov.cz)
+
+----
+
+### Datové formáty
+
+- 19 druhů
+- v současnosti pouze doporučujeme
+- příklady 
+	- geodata: shp, gml, dxf, geoJSON, tfw, tiff
+	- statická: csv, xlsx, xml
+	- dynamická: rss (odkaz)
+	- speciální: gtfs
+	- ...
+- geodata máme ve dvou souřadnicových formátech (S-JTSK, WGS 84)
 
 ----
 
@@ -119,22 +142,25 @@ Včetně implementace, úpravy zasíláme do upstreamu. Vývoj probíhá na [Git
 
 ![Návštěvnost datasetů - graf](general-assets/opendata/opendata-4-graf.png)
 
-<small>[Odkaz](http://opendata.praha.eu/dataset/mhmp-vyuzivani-sluzeb/resource/4e1c5c07-907d-455f-ac0d-f3fe480e7742)</small>
+<small>Návštěvnost datasetů, [odkaz](http://opendata.praha.eu/dataset/mhmp-vyuzivani-sluzeb/resource/4e1c5c07-907d-455f-ac0d-f3fe480e7742)</small>
 
 ----
 
 ![Landing page](general-assets/opendata/opendata-5-mapa.png)
 
+<small>Veřejné toalety, [odkaz](http://opendata.praha.eu/dataset/ipr-verejne_toalety/resource/a1755dce-bb8f-47f0-9894-ae2b5555cfc1)</small>
+
 ----
 
 ![Landing page](general-assets/opendata/opendata-5-mapa-cluster.png)
 
+<small>[odkaz](http://opendata.praha.eu/dataset/kamery/resource/e99f2bfe-3951-4332-a8de-e76169ebf07e?view_id=318c8dd7-9d31-4377-8d55-3f6b70a45e1f)</small>
 
 ----
 
 ![Výstupy z metra](general-assets/opendata/opendata-6-metro.png)
 
-<small>[Odkaz](http://opendata.praha.eu/dataset/ipr-vstupy_pid/resource/bec8a26c-0dfa-47f7-a954-6df99d6e3e77)</small>
+<small>Výstupy z metra, [odkaz](http://opendata.praha.eu/dataset/ipr-vstupy_pid/resource/bec8a26c-0dfa-47f7-a954-6df99d6e3e77)</small>
 
 ----
 
@@ -165,6 +191,7 @@ Včetně implementace, úpravy zasíláme do upstreamu. Vývoj probíhá na [Git
 
 ![Záplavová území](general-assets/opendata/opendata-8-zaplavova.png)
 
+<small>Záplavová území, [odkaz](http://opendata.praha.eu/dataset/ipr-zaplavove_uzemi___vltava__berounka_/resource/1b137a02-7ae7-4a34-80c6-f727ba313c73?view_id=a97e768e-a58b-4dc8-8228-80740269a596)</small>
 
 ---
 
@@ -186,6 +213,17 @@ http://data.mfcr.cz/supervizor/
 ----
 
 ![Supervizor - detail](general-assets/opendata/mfcr-supervizor-2.png)
+
+----
+
+### Možnosti
+
+Spolupracujeme se studenty ze ČVUTu.
+
+Data propagujeme na hackatonech.
+
+Komunikujeme i s komerčními subjekty. Např. Seznam.cz má o data zájem.
+
 
 ---
 
