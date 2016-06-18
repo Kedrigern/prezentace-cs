@@ -4,24 +4,24 @@
 -->
 
 
-# Smart City 
+# Smart City
 
 # s rozumem
 
 #### Ondřej Profant
 
 - člen komise ICT hl. m. Prahy
+- člen výboru ZHMP pro Smart city
 - opoziční zastupitel hl. m. Prahy
 - Pirátská strana
 
-4\. duben 2016
-
+17\. květen 2016
 
 ---
 
 ## Co je to smart city?
 
-> Smart City je místo, kde jsou efektivnější tradiční sítě a služby ve prospěch jeho obyvatel a podniků, díky použití digitálních a telekomunikačních technologii. 
+> Smart City je místo, kde jsou efektivnější tradiční sítě a služby ve prospěch jeho obyvatel a podniků, díky použití digitálních a telekomunikačních technologii.
 
 – Smart City Brno
 
@@ -45,11 +45,11 @@
 
 -> Myšlenka ->  
 
--> Kritika ->  <!-- .element class="fragment" -->
+-> **Kritika** ->  <!-- .element class="fragment" -->
 
 -> Roadmap (plán) ->  <!-- .element class="fragment" -->
 
--> Milníky -> <!-- .element class="fragment" -->
+-> **Milníky** -> <!-- .element class="fragment" -->
 
 -> Cíl <!-- .element class="fragment" -->
 
@@ -93,9 +93,19 @@
 	- jízdní řády
 	- statistiky (kriminalita)
 	- povodňové mapy
-- Nechme ostatní, aby byli chytří 
+- Nechme ostatní, aby byli chytří
 	- resp. nechme je nést riziko
 	- nechme je inovovat
+
+----
+
+### Praha
+
+Primátorka Adriana Krnáčová představila iniciativu:
+
+http://smartprague.eu/
+
+Avšak bez zjevného akčního plánu.
 
 ---
 
@@ -122,4 +132,3 @@ Prostor pro vaše dotazy.
 Prezentace:
 
 [Slideshare](http://www.slideshare.net/ondrejprofant/) | [Github](https://github.com/Kedrigern/prezentace-cs)
-
