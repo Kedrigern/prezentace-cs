@@ -20,3 +20,6 @@
 # Tmp files
 #
 *~
+
+
+node_modules
