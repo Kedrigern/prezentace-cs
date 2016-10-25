@@ -80,13 +80,19 @@ infrastructure = hardware
 
 ----
 
+![](general-assets/cloud/cloud-human.png)
+
+----
+
 # Pozitiva
 
 - Nemusíte nic instalovat
 - Aktualizované / udržované
-- Přístupné odkudkoliv
+- Přístupné odkudkoliv (mobil, tablet, ...)
 - Multiplatformní
-- Sdílené
+- Propojitelné s dalšími službami
+- Sdílené mezi více uživateli
+- U složitějších věcí může být vyšší výkon (vyhledávání)
 
 ----
 
@@ -94,7 +100,7 @@ infrastructure = hardware
 
 - Potřebujete připojení k Internetu
 - Závislost na poskytovali řešení
-- Potencionálně nižší výkon
+- Potencionálně nižší výkon (např. u aplikací se složitým rozhraním)
 - Nižší uživatelský komfort (oproti dobré aplikaci)
 
 ---
@@ -141,10 +147,14 @@ infrastructure = hardware
 # Bezpečnost
 
 - Vaše data jsou u cizí osoby!
-- [Agresivita reklamy](http://www.piratskelisty.cz/clanek-1317-skryt-pred-reklamnimi-giganty-tehotenstvi-znamena-vypadat-jako-zlocinec)
+	- [Agresivita reklamy](http://www.piratskelisty.cz/clanek-1317-skryt-pred-reklamnimi-giganty-tehotenstvi-znamena-vypadat-jako-zlocinec)
+- Prolomení účtu
 
-Obrana:
+----
 
+# Základní obrana
+
+- Základní bezpečnostní návyky
 - Dvoufaktorová autentizace
 - Šifrování dat
 
@@ -204,6 +214,10 @@ https://demo.nextcloud.com
 
 https://drive.google.com
 
+Specializované:
+
+https://www.flickr.com
+
 (Bez registrace)
 
 ----
@@ -228,6 +242,14 @@ https://ethercalc.org
 
 ----
 
+## Pocket
+
+https://getpocket.com/a/queue/list/
+
+(Google účet)
+
+----
+
 ## Google Doc
 
 Kompletní office: psaní, tabulky, prezentace, kreslení
@@ -243,6 +265,12 @@ https://drive.google.com
 Office, uložiště, mail, kontakty a kalendář.
 
 (Google účet)
+
+----
+
+## Poznámky
+
+https://evernote.com
 
 ----
 
