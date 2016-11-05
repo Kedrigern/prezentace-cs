@@ -1,23 +1,26 @@
-<!-- https://www.techlib.cz/cs/83581-cloudove-technologie -->
+<!-- 
+$theme: gaia
+footer: Cloudové technologie, Ondřej Profant
+page_number: true
+*footer:
+*page_number: false
+*template: invert
+My notes: https://www.techlib.cz/cs/83581-cloudove-technologie -->
 
-<!-- .slide: data-background="general-assets/cloud/intro.jpg" -->
+![bg](general-assets/cloud/intro.jpg)
 
-<div style="color: black;">
+# Cloudové technologie
 
-<h1 style="color: black;">Cloudové technologie</h1>
+## jejich možnosti a využití
 
-<h2 style="color: black;">jejich možnosti a využití</h2>
-
-<h3 style="color: black;">Ondřej Profant</h3>
-
-</div>
+### Ondřej Profant
 
 ----
 
 # Ondřej Profant
 
-- odborník na svobodný software
-- člen komise ICT RHMP
+### odborník na svobodný software
+### člen komise ICT RHMP
 
 ---
 
@@ -28,9 +31,6 @@
 2. Právní otázky (15 m)
 3. Bezpečnost (15 m)
 4. Přehled služeb (15 m)
-  - mail
-  - uložiště
-  - služby (psaní, tabulky, účetnictví)
 5. Přestávka (15 m)
 6. Praktické ukázky
 
@@ -56,7 +56,7 @@
 
 ----
 
-![](general-assets/cloud/cloud_computing.svg)
+![Cloud - schéma](general-assets/cloud/cloud_computing.svg)
 
 ----
 
@@ -76,11 +76,11 @@ infrastructure = hardware
 
 ----
 
-![](general-assets/cloud/cloud_layers.png)
+![Vrstvy cloudu](general-assets/cloud/cloud_layers.png)
 
 ----
 
-![](general-assets/cloud/cloud-human.png)
+![Cloud prakticky](general-assets/cloud/cloud-human.png)
 
 ----
 
@@ -128,7 +128,7 @@ infrastructure = hardware
 
 - nemusí se řídit podle práva ČR
 - ale nemusí se řídit ani podle práva původu!
-  - firma z USA se nemusí řídit tamnějším právním řádem
+	- firma z USA se nemusí řídit tamnějším právním řádem
 - vymáhání práv je obtížné i když na ně máte nárok
 
 ----
@@ -140,7 +140,7 @@ infrastructure = hardware
 - je obtížné dostat se zpátky k datům
 - škoda je dosti imiginární
 - většinou však problém nenastává
-  - kdo z vás pravidelně zálohuje?
+	- kdo z vás pravidelně zálohuje?
 
 ---
 
@@ -173,11 +173,15 @@ Co vše můžeme použít:
 
 ---
 
-<!-- .slide: data-background="general-assets/questions.jpg" -->
+<!--
+*template: invert
+-->
+
+![bg](general-assets/questions.jpg)
 
 # Otázky?
 
-Prostor pro vaše dotazy
+#### Prostor pro vaše dotazy
 
 ---
 

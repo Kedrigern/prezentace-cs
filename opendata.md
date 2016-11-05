@@ -1,20 +1,36 @@
-<!--Meta author:'Ondřej Profant' theme:'night' title:'Celopražská otevřená data'-->
+<!--
+$size: 4:3
+$theme: gaia
+page_number: true
+footer: Celopražská opendata, Ondřej Profant
+*page_number: false
+*footer: 
+*template: invert
 
-<!-- 
-- 1 IT pracovník <!-- .element class="fragment" 
--->
+Marp: https://yhatt.github.io/marp/
 
+Zadání:
+    1. presentace pana Tosovskeho se zameri idealne na temata typu “it’s better to share”, “we grow when we share” - coz, na tema projektu “nas stat, nase data” a jak FOM pomaha otevirani dat, verejne spravy, pristupu k informacim apod. 
+    2. vas bych rad v teto souvislosti pozadal o predstaveni konkretnich projektu “otevrenych dat” na magistratu a v mestskych castech. Mely by tedy vase dve prednasky krasne navazovat :-)
 
-# Celopražská opendata
+Abstract: Opendata v praxi. Jak se připravují opendata v největší samosprávě v ČR. Jak vydolovat data z vendor lock-in informačních systémů. A jak k datům přitáhnout uživatele. Jaké nástroj použít a kde jsou jejich limity-->
+
+![bg](general-assets/opendata/opendata-2-landing-page.png)
+
+# Veřejná správa 
+
+# a otevřená data
+
+### Ondřej Profant
+
+---
 
 #### Ondřej Profant
 
-- člen komise ICT hl. m. Prahy
-- opoziční zastupitel hl. m. Prahy
-- Pirátská strana
-
-16\. květen 2016
-
+- koordinátor celopražských otevřených dat
+	- opendata.praha.eu
+- člen komise ICT Rady hl. m. Prahy
+- opoziční zastupitel hl. m. Prahy za Pirátskou strana
 
 ---
 
@@ -33,7 +49,7 @@
 
 ![Teze digitální strategie](general-assets/teze.png)
 
-----
+<!--
 
 ## Teze digitální strategie
 
@@ -44,7 +60,6 @@
 - Přístupnost rozhraní
 - Ochrana dat
 
-----
 
 ## Teze digitální strategie
 
@@ -55,7 +70,9 @@
 - Praha je na netu tam, kde jsou její občané
 - Občan, pak turista
 
-----
+-->
+
+---
 
 ## Teze digitální strategie
 
@@ -65,66 +82,59 @@
 - Open Source
 - Otevřená soutěž mezi dodavateli
 
-
 ---
 
+## Celopražská OpenData v číslech
 
-## Celopražská OpenData
+|         |                              |
+|--------:|------------------------------|
+|      14 | organizací                   |
+|      19 | datových formát              |
+|     162 | datových sad                 |
+|     582 | druhů zvířat z pražské ZOO   |
+|   7 110 | evidovaného majetku za P8    |
+|  12 584 | faktur za rok 2015 (MČ, IPR) |
+| 497 609 | výpujček z MK (1998-2015)    |
 
-| #       |                           |
-|--------:|---------------------------|
-|      13 | organizací                |
-|      19 | datových formát           |
-|     156 | datových sad              |
-|   1 000 | zvířat z pražské ZOO      |
-|   7 110 | evidovaného majetku       |
-|   8 463 | faktur z městkých části   |
-| 497 609 | výpujček z MK (1998-2015) |
-
-Čísla jsou stav k 16. 5.
+Čísla jsou stav k 30. 10. 2016
 
 ----
 
 ### Organizace
 
-- pilotní provoz
-- dobrovolné zapojení
-- zapojeno:
+- dobrovolné zapojení, zapojeno:
 	- 5 městských části (P5, P6, P7, P8, P21)
 	- nejaktivnějším partnerem Institut plánování a rozvoje (IPR)
 	- dalšími: DPP, TSK, ZOO, Městská knihovna, Operátor ICT
 - odpovědnost:
-	- provoz: magistrát (technické řešení)
-	- koordinace: magistrát
+	- provoz a koordinace: magistrát
 	- správa: decentralizovaná (MČ mají vlastní směrnice dle opendata.gov.cz)
 
 ----
 
 ### Datové formáty
 
-- 19 druhů
+- 19 různých druhů,
 - v současnosti pouze doporučujeme
 - příklady 
-	- geodata: shp, gml, dxf, geoJSON, tfw, tiff
 	- statická: csv, xlsx, xml
 	- dynamická: rss (odkaz)
-	- speciální: gtfs
-	- ...
-- geodata máme ve dvou souřadnicových formátech (S-JTSK, WGS 84)
-
+	- speciální: gtfs (jízdní řády)
+	- geodata: shp, gml, dxf, geoJSON, tfw, tiff
+	 	- geodata máme ve dvou souřadnicových formátech (S-JTSK, WGS 84)
+	 
 ----
 
 ### Technicky
 
-IS / CMS: [CKAN](http://ckan.org) od The Open Knowledge Foundation
+IS / CMS: [CKAN](http://ckan.org) od The Open Knowledge Foundation. CentOS a PostgreSQL.
 
 Včetně implementace, úpravy zasíláme do upstreamu. Vývoj probíhá na [Githubu](http://github.com).
 
-[**opendata.praha.eu**](http://opendata.praha.eu)
-
+- [**opendata.praha.eu**](http://opendata.praha.eu)
+- [**github dodavatele**](https://github.com/singularita-corp/ckan)
 
 ---
-
 
 ## Jak to vypadá?
 
@@ -132,25 +142,27 @@ Včetně implementace, úpravy zasíláme do upstreamu. Vývoj probíhá na [Git
 
 [opendata.praha.eu](http://opendata.praha.eu)
 
-----
+<!--
 
 ![Návštěvnost datasetů - tabulka](general-assets/opendata/opendata-3-table.png)
 
 <small>[Odkaz](http://opendata.praha.eu/dataset/mhmp-vyuzivani-sluzeb/resource/4e1c5c07-907d-455f-ac0d-f3fe480e7742?view_id=4a2e0207-fb33-45b0-833f-49ed8441be2d)</small>
+-->
 
-----
+---
 
 ![Návštěvnost datasetů - graf](general-assets/opendata/opendata-4-graf.png)
 
 <small>Návštěvnost datasetů, [odkaz](http://opendata.praha.eu/dataset/mhmp-vyuzivani-sluzeb/resource/4e1c5c07-907d-455f-ac0d-f3fe480e7742)</small>
 
-----
+---
+<!--
 
 ![Landing page](general-assets/opendata/opendata-5-mapa.png)
 
 <small>Veřejné toalety, [odkaz](http://opendata.praha.eu/dataset/ipr-verejne_toalety/resource/a1755dce-bb8f-47f0-9894-ae2b5555cfc1)</small>
 
-----
+-->
 
 ![Landing page](general-assets/opendata/opendata-5-mapa-cluster.png)
 
@@ -168,13 +180,13 @@ Včetně implementace, úpravy zasíláme do upstreamu. Vývoj probíhá na [Git
 
 <small>Cyklistické trasy, [odkaz](http://opendata.praha.eu/dataset/ipr-cyklisticke_trasy/resource/dc1aac1d-cf4a-475e-9f98-052fc53d10b5)</small>
 
-----
+<!--
 
 ![Zóny placeného stání](general-assets/opendata/opendata-11-zps.png)
 
 <small>Zóny placeného stání, [odkaz](http://opendata.praha.eu/dataset/ipr-stani_v_zonach_placeneho_stani/resource/c2f35cd0-eff2-41c8-928b-d5c257401fb2)</small>
 
-----
+
 
 ![Okrsky městské policie](general-assets/opendata/opendata-9-okrsky-mp.png)
 
@@ -186,7 +198,7 @@ Včetně implementace, úpravy zasíláme do upstreamu. Vývoj probíhá na [Git
 
 
 <small>Tarifní pásma PID, [odkaz](http://opendata.praha.eu/dataset/ipr-tarifni_pasma_pid/resource/2e53bf52-eaa0-4f1f-bca0-cdf6b8714a99)</small>
-
+-->
 ----
 
 ![Záplavová území](general-assets/opendata/opendata-8-zaplavova.png)
@@ -198,16 +210,16 @@ Včetně implementace, úpravy zasíláme do upstreamu. Vývoj probíhá na [Git
 
 ## Co dál?
 
+**Data!**
+
+**Realtime data**
+
 **Aplikace!**
-
-Skvělým příkladem je supervizor MF ČR:
-
-http://data.mfcr.cz/supervizor/
 
 ----
 
 
-![Supervizor - úvodní stránka](general-assets/opendata/mfcr-supervizor-1.png)
+![Supervizor - úvodní stránka](general-assets/opendata/opendata-supervizor-ipr.png)
 
 
 ----
@@ -216,7 +228,11 @@ http://data.mfcr.cz/supervizor/
 
 ----
 
-### Možnosti
+![Supervizor - detail](general-assets/opendata/opendata-rozpocet.jpg)
+
+---
+
+## Možnosti rozvoje
 
 Spolupracujeme se studenty ze ČVUTu.
 
@@ -224,10 +240,21 @@ Data propagujeme na hackatonech.
 
 Komunikujeme i s komerčními subjekty. Např. Seznam.cz má o data zájem.
 
+---
+
+## Problémy
+
+- udržitelnost
+- veřejná správa neumí s open source pracovat
+	- nevyužívá výhody
+	- nesdílí
+	- má přehnané nároky, které v praxi nevyužívá
 
 ---
 
-<!-- .slide: data-background="general-assets/questions.jpg" -->
+<!-- template: invert -->
+
+![bg](general-assets/questions.jpg)
 
 ## Otázky?
 
