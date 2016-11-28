@@ -9,9 +9,11 @@ zastupitel Hl. m. Prahy
 
 # Fakta
 
+1\. část prezentace obsahuje základní východiska.
+
 ----
 
-## Historie
+## Historie zavádění zón
 
 | Rok  | Městská část  |
 |------|---------------|
