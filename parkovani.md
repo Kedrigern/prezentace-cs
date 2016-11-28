@@ -76,10 +76,15 @@ Historicky již za minulého režimu.
 - Nedostatek P+R
 	- 16 parkovišť
 	- 3009 par. stání
-- Parkování je dotované
-- Moc typů zón
+- Platby za parkování neodpovídají tržní ceně
+	-  1 200 Kč/rok resident 1. auto
+	- 12 000 Kč/rok resident 2. atuo
+- Chybí volné přenosné hodiny
+- Moc typů zón (zelená)
 - Nepohodlné (složité zaplatit)
+	- zlepšilo
 - Není zde tržní princip
+- Špatné vymezení dob
 
 ----
 
@@ -169,4 +174,4 @@ Otázky?
 - [ročenka TSK](http://www.tsk-praha.cz/static/udi-rocenka-2015-cz.pdf)
 - [envwiki](https://www.enviwiki.cz/wiki/Management_parkov%C3%A1n%C3%AD)
 - [Michal Kašpárek](http://m.penize.cz/spotrebitel/316168-jak-zavest-bezproblemove-parkovani-a-nepodmineny-prijem-jednou-ranou#element_22_90311)
-
+- [Jak fungují nové zóny?](http://mobil.idnes.cz/placeni-v-zonach-placeneho-stani-praha-dxs-/aplikace.aspx?c=A160823_192130_aplikace_jm)

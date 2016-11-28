@@ -3,12 +3,15 @@ $theme: Gaia
 page_number: true
 footer: Otevřená města, Ondřej Profant
 *page_number: false
-*footer: 
+*footer: .
 -->
 
 # Otevřená města
 
 #### 5\. listopad 2016
+
+#### OpenAlt
+
 
 ---
 
@@ -101,6 +104,16 @@ Jsou organizací, která zastřešuje:
 ## [Supervizor](https://github.com/SmallhillCZ/Supervizor)
 
 ![Supervizor](general-assets/opendata/opendata-supervizor-ipr.png)
+
+---
+
+## Supervizor
+
+- 1\. místo v soutěži Společně otevíráme data 2015
+- Nevytvořili Otevřená města
+- [Github](https://github.com/SmallhillCZ/Supervizor)
+- [Ministerstva](http://data.mfcr.cz/supervizor/)
+- [Praha](https://supervizor.iprpraha.cz/)
 
 ---
 

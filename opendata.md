@@ -1,6 +1,6 @@
 <!--
 $size: 4:3
-$theme: gaia
+$theme: Gaia
 page_number: true
 footer: Celopražská opendata, Ondřej Profant
 *page_number: false
@@ -17,9 +17,7 @@ Abstract: Opendata v praxi. Jak se připravují opendata v největší samosprá
 
 ![bg](general-assets/opendata/opendata-2-landing-page.png)
 
-# Veřejná správa 
-
-# a otevřená data
+# Celopražská otevřená data
 
 ### Ondřej Profant
 
@@ -244,11 +242,12 @@ Komunikujeme i s komerčními subjekty. Např. Seznam.cz má o data zájem.
 
 ## Problémy
 
-- udržitelnost
+- udržitelnost (ve smyslu opensource)
 - veřejná správa neumí s open source pracovat
 	- nevyužívá výhody
 	- nesdílí
 	- má přehnané nároky, které v praxi nevyužívá
+- dostatek uživatelů / aplikací
 
 ---
 
